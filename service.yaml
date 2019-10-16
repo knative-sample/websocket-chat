@@ -4,12 +4,6 @@ metadata:
   name: websocket-chat
 spec:
   template:
-    metadata:
-      labels:
-        app: websocket-chat
-      annotations:
-        autoscaling.knative.dev/maxScale: "20"
-        autoscaling.knative.dev/target: "10"
     spec:
       containers:
         - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/websocket-chat:2019-10-15
